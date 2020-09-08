@@ -1,0 +1,60 @@
+.tab2-content-box {
+	position: absolute;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	text-align: left;
+	background: black;
+	color: white;
+	height: 60vh;
+	width: 100%;
+}
+
+ .tab2-content-right {
+	font-size: 1.7rem;
+	max-width: 23%;
+	max-height: 100%;
+	padding-right: 4rem;
+	padding-left: ;
+	overflow: hidden;
+}
+
+.tab2-content-right > a {
+	margin-top: 1rem;
+}
+
+/*.content-left > h1 {
+	max-width: 35%;
+}
+
+.content-left > p {
+	text-align: center;
+	max-width: 35%;
+}
+
+.tab1-btn {
+	max-width: 35%;
+	text-align: center;
+}
+*/
+
+
+.tab2-content-left {
+	width: 77%;
+	height: 100%;
+	position: relative;
+	background: url('./beachReading.jpg') no-repeat center center/cover;
+	background-position: center top;
+}
+
+.tab2-content-left::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0,0,0, 0.55);
+	box-shadow: inset -10rem -2rem 9rem #000000, inset -10rem -2rem 5.5rem #000000;
+}
