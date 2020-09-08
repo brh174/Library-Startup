@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Library-Startup/static/css/main.89a44abf.chunk.css",
+    "main.js": "/Library-Startup/static/js/main.cecc2f14.chunk.js",
+    "main.js.map": "/Library-Startup/static/js/main.cecc2f14.chunk.js.map",
+    "runtime-main.js": "/Library-Startup/static/js/runtime-main.7fd8a1d7.js",
+    "runtime-main.js.map": "/Library-Startup/static/js/runtime-main.7fd8a1d7.js.map",
+    "static/css/2.3c03f26f.chunk.css": "/Library-Startup/static/css/2.3c03f26f.chunk.css",
+    "static/js/2.6a0d7165.chunk.js": "/Library-Startup/static/js/2.6a0d7165.chunk.js",
+    "static/js/2.6a0d7165.chunk.js.map": "/Library-Startup/static/js/2.6a0d7165.chunk.js.map",
+    "index.html": "/Library-Startup/index.html",
+    "precache-manifest.ac32b76385662877c7956ce5ce960c1d.js": "/Library-Startup/precache-manifest.ac32b76385662877c7956ce5ce960c1d.js",
+    "service-worker.js": "/Library-Startup/service-worker.js",
+    "static/css/2.3c03f26f.chunk.css.map": "/Library-Startup/static/css/2.3c03f26f.chunk.css.map",
+    "static/css/main.89a44abf.chunk.css.map": "/Library-Startup/static/css/main.89a44abf.chunk.css.map",
+    "static/js/2.6a0d7165.chunk.js.LICENSE.txt": "/Library-Startup/static/js/2.6a0d7165.chunk.js.LICENSE.txt",
+    "static/media/showcase.css": "/Library-Startup/static/media/books.56e57433.jpg",
+    "static/media/The Blacklist.ttf": "/Library-Startup/static/media/The Blacklist.4a5258e3.ttf",
+    "static/media/TabTwoContent.css": "/Library-Startup/static/media/beachReading.b7f079f6.jpg",
+    "static/media/TabThreeContent.css": "/Library-Startup/static/media/handHolding.b4b7b109.jpg",
+    "static/media/TabOneContent.css": "/Library-Startup/static/media/yellowedBook.e60a5880.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fd8a1d7.js",
+    "static/css/2.3c03f26f.chunk.css",
+    "static/js/2.6a0d7165.chunk.js",
+    "static/css/main.89a44abf.chunk.css",
+    "static/js/main.cecc2f14.chunk.js"
+  ]
+}
