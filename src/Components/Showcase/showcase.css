@@ -17,7 +17,7 @@
 	left: 50%;
 	transform: translate(-50%, -5%);
 	color: var(--primary-color);
-	font-size: 8rem;
+	font-size: 5.5rem;
 	z-index: 2;
 	margin: 0;
 }
@@ -38,7 +38,7 @@
 }
 
 .btn-xl {
-	font-size: 2rem;
+	font-size: 1.9rem;
 	padding: 1.5rem 2.1rem;
 	text-transform: uppercase;
 }
@@ -81,13 +81,13 @@
 	color: white;
 	z-index: 2;
 	top: 30%;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 
 }
 
 .showcase-content h1 {
 	font-weight: 700;
-	font-size: 5.2rem;
+	font-size: 4rem;
 	line-height: 1.1;
 	margin: 0 0 2rem;
 }
@@ -96,7 +96,7 @@
 	text-transform: uppercase;
 	color: white;
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.7rem;
 	line-height: 1.25;
 	margin: 0 0 2rem;
 }
