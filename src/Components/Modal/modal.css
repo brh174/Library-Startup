@@ -17,8 +17,8 @@
 	position: fixed;
 	background-color: #141414;
 	border-radius: 0.4%;
-	height: 50rem;
-	width: 33rem;
+	height: 37rem;
+	width: 45rem;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -41,10 +41,27 @@
 
 }
 
+.first-line-container {
+	display: flex;
+	flex-direction: row;
+	width: 75%;
+}
+
+.first-name {
+	float: left;
+	width: 40%;
+	
+}
+
+.last-name {
+	float: right;
+	width: 40%;
+
+}
+
 .textbox {
 	display: flex;
-	border-bottom: var(--primary-color) 4px solid;
-	width: 76%;
+	border-bottom: var(--primary-color) 4px solid;;
 	margin: 1.5rem;
 	padding: .6rem;
 	color: #999999;
@@ -56,9 +73,10 @@
 	outline: none;
 	background: none;
 	color: white;
-	font-size: 1.32rem;
+	font-size: 1.35rem;
 	width: 100%;
 	margin-left: .9rem;
+	padding-top: .5rem;
 }
 
 .btn-container {

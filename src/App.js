@@ -11,10 +11,11 @@ import './App.css';
 const initialState = {
 	route: 'landing',
 	isModalOpen: false,
+  displaySuccess: false,
 	selectedTab: 'tab-1',
-  registerName: '',
-  registerEmail: '',
-  registerPass: ''
+  firstName: '',
+  lastName: '',
+  email: ''
 }
 
 class App extends Component {
@@ -22,26 +23,41 @@ class App extends Component {
   constructor() {
   	super();
   	this.state = initialState;
+
+  }
+
+  onSubmitSignUp = () => {
+    fetch('https://hutchins-designs-backend.herokuapp.com/signup', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        firstName: this.state.firstName,
+        lastName: this.state.lastName,
+        email: this.state.email,
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data) {
+          this.setState({displaySuccess: true});
+        }
+      })
   }
 
   handleTabChange = (selectedTab) => {
   	this.setState({selectedTab: selectedTab});
   }
 
-  removeBorder = () => {
-    this.state.selectedTab.classList.add('tab-border');
-  }
-
-  onNameChange = (event) => {
-    this.setState({registerName: event.target.value});
+  onFirstNameChange = (event) => {
+    this.setState({firstName: event.target.value});
   }
 
   onEmailChange = (event) => {
-    this.setState({registerEmail: event.target.value});
+    this.setState({email: event.target.value});
   }
 
-  onPassChange = (event) => {
-    this.setState({registerPass: event.target.value});
+  onLastNameChange = (event) => {
+    this.setState({lastName: event.target.value});
   }
 
   onCallToAction = (isModalOpen) => {
@@ -52,8 +68,6 @@ class App extends Component {
     this.setState({isModalOpen: false});
   }
 
-  
-
   render() {
     return (
     <div className="App">
@@ -61,9 +75,11 @@ class App extends Component {
           <Modal 
             isModalOpen={this.state.isModalOpen} 
             handleCloseBtnClick={this.handleCloseBtnClick}
-            onNameChange={this.state.onNameChange}
-            onEmailChange={this.state.onEmailChange}
-            onPassChange={this.state.onPassChange} 
+            onFirstNameChange={this.onFirstNameChange}
+            onEmailChange={this.onEmailChange}
+            onLastNameChange={this.onLastNameChange} 
+            handleInsideClick={this.handleInsideClick}
+            onSubmitSignUp={this.onSubmitSignUp}
           />
        		<Tabs 
             selectedTab={this.state.selectedTab} 
