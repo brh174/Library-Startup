@@ -26,6 +26,7 @@ class App extends Component {
 
   }
 
+  //sending info to mailchimp
   onSubmitSignUp = () => {
     fetch('https://hutchins-designs-backend.herokuapp.com/signup', {
       method: 'POST',
@@ -65,7 +66,7 @@ class App extends Component {
   }
 
   handleCloseBtnClick = (isModalOpen) => {
-    this.setState({isModalOpen: false});
+    this.setState({isModalOpen: false, displaySuccess: false});
   }
 
   render() {
@@ -73,7 +74,8 @@ class App extends Component {
     <div className="App">
         	<Showcase onCallToAction={this.onCallToAction} isModalOpen={this.state.isModalOpen} />
           <Modal 
-            isModalOpen={this.state.isModalOpen} 
+            isModalOpen={this.state.isModalOpen}
+            displaySuccess={this.state.displaySuccess}
             handleCloseBtnClick={this.handleCloseBtnClick}
             onFirstNameChange={this.onFirstNameChange}
             onEmailChange={this.onEmailChange}
