@@ -26,14 +26,22 @@ class App extends Component {
 
   }
 
+  capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   //sending info to mailchimp
   onSubmitSignUp = () => {
+
+    let capFirstName = this.capitalizeFirstLetter(this.state.firstName);
+    let capLastName = this.capitalizeFirstLetter(this.state.lastName);
+
     fetch('https://hutchins-designs-backend.herokuapp.com/signup', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
+        firstName: capFirstName,
+        lastName: capLastName,
         email: this.state.email,
       })
     })
